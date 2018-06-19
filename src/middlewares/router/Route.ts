@@ -2,7 +2,9 @@ import * as Koa from 'koa';
 import * as Router from 'koa-router';
 import * as glob from 'glob';
 import * as path from 'path';
+import * as jwt from 'koa-jwt';
 import { RouteMap } from '../../types/router';
+import { verifyToken } from '../../lib/auth';
 import config from '../../config';
 
 const router = new Router({
@@ -43,7 +45,7 @@ export class Route {
    *
    * @memberOf Route
    */
-  registerRouters(controllerDir: string) {
+  registerRouters(controllerDir: string, jwtOpts: jwt.Options) {
     // 载入api接口，使用sync同步载入
     glob.sync(path.join(controllerDir, './**/*')).forEach(item => require(item));
 
@@ -69,6 +71,8 @@ export class Route {
       controllers.forEach((controller) => this.router[config.method](routerPath, controller));
     });
 
+    // 暂时所有有允许通过
+    this.app.use(jwt({ secret: jwtOpts.secret, key: jwtOpts.key, isRevoked: verifyToken, debug: true, passthrough: true }).unless({ path: unlessPath }));
     this.app.use(this.router.routes());
     this.app.use(this.router.allowedMethods());
   }

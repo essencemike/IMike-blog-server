@@ -10,6 +10,7 @@ import * as moment from 'moment';
 import { Route } from './middlewares/router/Route';
 import errorHandle from './middlewares/errorHandle';
 import response from './middlewares/response';
+import initAdmin from './middlewares/initAdmin';
 import * as Database from './lib/db';
 
 const app = new Koa();
@@ -35,11 +36,12 @@ export class Server {
     Database.init(this.config.mongo);
 
     this.app.use(bodyParser());
-    this.app.use(response);
-    this.app.use(errorHandle);
-
     // 跨域
     this.app.use(kcors());
+
+    this.app.use(response);
+    this.app.use(errorHandle);
+    this.app.use(initAdmin);
 
     // 开启 Gzip
     // this.app.use(compress({
@@ -49,7 +51,7 @@ export class Server {
     // }));
 
     // 初始化所有的 routers
-    this.router.registerRouters(`${__dirname}/controllers`);
+    this.router.registerRouters(`${__dirname}/controllers`, { secret: this.config.jwt.secret, key: this.config.jwt.key });
   }
 
   start(): void {

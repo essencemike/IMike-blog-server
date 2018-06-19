@@ -68,6 +68,12 @@
   version "1.3.0"
   resolved "http://npm.venus-bdlab.com/@types%2fhttp-assert/-/http-assert-1.3.0.tgz#5e932606153da28e1d04f9043f4912cf61fd55dd"
 
+"@types/jsonwebtoken@^7.2.7":
+  version "7.2.7"
+  resolved "http://npm.venus-bdlab.com/@types%2fjsonwebtoken/-/jsonwebtoken-7.2.7.tgz#5dd62e0c0a0c6f211c3c1d13d322360894625b47"
+  dependencies:
+    "@types/node" "*"
+
 "@types/kcors@^2.2.3":
   version "2.2.3"
   resolved "http://npm.venus-bdlab.com/@types%2fkcors/-/kcors-2.2.3.tgz#e6532132492173a8681dd85774f380834b96f571"
@@ -95,6 +101,12 @@
     "@types/koa" "*"
     "@types/node" "*"
 
+"@types/koa-jwt@^3.3.0":
+  version "3.3.0"
+  resolved "http://npm.venus-bdlab.com/@types%2fkoa-jwt/-/koa-jwt-3.3.0.tgz#b30fe8a96bbe1aec44cd6da24d91f2963e62e3bf"
+  dependencies:
+    koa-jwt "*"
+
 "@types/koa-router@^7.0.28":
   version "7.0.28"
   resolved "http://npm.venus-bdlab.com/@types%2fkoa-router/-/koa-router-7.0.28.tgz#67487c862a831099aed8864a8996bfa7e989edc0"
@@ -111,6 +123,12 @@
     "@types/http-assert" "*"
     "@types/keygrip" "*"
     "@types/koa-compose" "*"
+    "@types/node" "*"
+
+"@types/md5@^2.1.32":
+  version "2.1.32"
+  resolved "http://npm.venus-bdlab.com/@types%2fmd5/-/md5-2.1.32.tgz#93e23437fcd17a7b9ca98d02aa6002e835842fe8"
+  dependencies:
     "@types/node" "*"
 
 "@types/mime@*":
@@ -220,6 +238,10 @@ bson@~1.0.4, bson@~1.0.5:
   version "1.0.9"
   resolved "http://npm.venus-bdlab.com/bson/-/bson-1.0.9.tgz#12319f8323b1254739b7c6bef8d3e89ae05a2f57"
 
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "http://npm.venus-bdlab.com/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz#f8e71132f7ffe6e01a5c9697a4c6f3e48d5cc819"
+
 buffer-from@^1.0.0:
   version "1.1.0"
   resolved "http://npm.venus-bdlab.com/buffer-from/-/buffer-from-1.1.0.tgz#87fcaa3a298358e0ade6e442cfce840740d1ad04"
@@ -249,6 +271,10 @@ chalk@^2.3.0, chalk@^2.4.1:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
+
+charenc@~0.0.1:
+  version "0.0.2"
+  resolved "http://npm.venus-bdlab.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
 
 co-body@^6.0.0:
   version "6.0.0"
@@ -310,6 +336,10 @@ copy-to@^2.0.1:
   version "2.0.1"
   resolved "http://npm.venus-bdlab.com/copy-to/-/copy-to-2.0.1.tgz#2680fbb8068a48d08656b6098092bdafc906f4a5"
 
+crypt@~0.0.1:
+  version "0.0.2"
+  resolved "http://npm.venus-bdlab.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+
 dateformat@3.0.3:
   version "3.0.3"
   resolved "http://npm.venus-bdlab.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
@@ -345,6 +375,12 @@ destroy@^1.0.3:
 diff@^3.1.0, diff@^3.2.0:
   version "3.5.0"
   resolved "http://npm.venus-bdlab.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+
+ecdsa-sig-formatter@1.0.10:
+  version "1.0.10"
+  resolved "http://npm.venus-bdlab.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.10.tgz#1c595000f04a8897dfb85000892a0f4c33af86c3"
+  dependencies:
+    safe-buffer "^5.0.1"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -436,6 +472,10 @@ inherits@2, inherits@2.0.3:
   version "2.0.3"
   resolved "http://npm.venus-bdlab.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
+is-buffer@~1.1.1:
+  version "1.1.6"
+  resolved "http://npm.venus-bdlab.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+
 is-generator-function@^1.0.3:
   version "1.0.7"
   resolved "http://npm.venus-bdlab.com/is-generator-function/-/is-generator-function-1.0.7.tgz#d2132e529bb0000a7f80794d4bdf5cd5e5813522"
@@ -454,6 +494,51 @@ js-yaml@^3.7.0:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+jsonwebtoken@8.0.0:
+  version "8.0.0"
+  resolved "http://npm.venus-bdlab.com/jsonwebtoken/-/jsonwebtoken-8.0.0.tgz#7b241aa67c61b3d0b3e641254a9a6f5b66f550e8"
+  dependencies:
+    jws "^3.1.4"
+    lodash.includes "^4.3.0"
+    lodash.isarray "^4.0.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.0.0"
+    xtend "^4.0.1"
+
+jsonwebtoken@^8.3.0:
+  version "8.3.0"
+  resolved "http://npm.venus-bdlab.com/jsonwebtoken/-/jsonwebtoken-8.3.0.tgz#056c90eee9a65ed6e6c72ddb0a1d325109aaf643"
+  dependencies:
+    jws "^3.1.5"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.1.1"
+
+jwa@^1.1.5:
+  version "1.1.6"
+  resolved "http://npm.venus-bdlab.com/jwa/-/jwa-1.1.6.tgz#87240e76c9808dbde18783cf2264ef4929ee50e6"
+  dependencies:
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.10"
+    safe-buffer "^5.0.1"
+
+jws@^3.1.4, jws@^3.1.5:
+  version "3.1.5"
+  resolved "http://npm.venus-bdlab.com/jws/-/jws-3.1.5.tgz#80d12d05b293d1e841e7cb8b4e69e561adcf834f"
+  dependencies:
+    jwa "^1.1.5"
+    safe-buffer "^5.0.1"
 
 kareem@2.2.1:
   version "2.2.1"
@@ -504,6 +589,13 @@ koa-is-json@^1.0.0:
   version "1.0.0"
   resolved "http://npm.venus-bdlab.com/koa-is-json/-/koa-is-json-1.0.0.tgz#273c07edcdcb8df6a2c1ab7d59ee76491451ec14"
 
+koa-jwt@*, koa-jwt@^3.3.2:
+  version "3.3.2"
+  resolved "http://npm.venus-bdlab.com/koa-jwt/-/koa-jwt-3.3.2.tgz#24d955849e1804bc7418432f08d980a0f3b061fd"
+  dependencies:
+    jsonwebtoken "8.0.0"
+    koa-unless "1.0.0"
+
 koa-router@^7.4.0:
   version "7.4.0"
   resolved "http://npm.venus-bdlab.com/koa-router/-/koa-router-7.4.0.tgz#aee1f7adc02d5cb31d7d67465c9eacc825e8c5e0"
@@ -514,6 +606,10 @@ koa-router@^7.4.0:
     methods "^1.0.1"
     path-to-regexp "^1.1.1"
     urijs "^1.19.0"
+
+koa-unless@1.0.0:
+  version "1.0.0"
+  resolved "http://npm.venus-bdlab.com/koa-unless/-/koa-unless-1.0.0.tgz#5aa57384bc882568afc90ac04852a3d58658aeeb"
 
 koa@^2.5.1:
   version "2.5.1"
@@ -548,6 +644,38 @@ lodash.get@4.4.2:
   version "4.4.2"
   resolved "http://npm.venus-bdlab.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
 
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "http://npm.venus-bdlab.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
+
+lodash.isarray@^4.0.0:
+  version "4.0.0"
+  resolved "http://npm.venus-bdlab.com/lodash.isarray/-/lodash.isarray-4.0.0.tgz#2aca496b28c4ca6d726715313590c02e6ea34403"
+
+lodash.isboolean@^3.0.3:
+  version "3.0.3"
+  resolved "http://npm.venus-bdlab.com/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
+
+lodash.isinteger@^4.0.4:
+  version "4.0.4"
+  resolved "http://npm.venus-bdlab.com/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz#619c0af3d03f8b04c31f5882840b77b11cd68343"
+
+lodash.isnumber@^3.0.3:
+  version "3.0.3"
+  resolved "http://npm.venus-bdlab.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "http://npm.venus-bdlab.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+
+lodash.isstring@^4.0.1:
+  version "4.0.1"
+  resolved "http://npm.venus-bdlab.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "http://npm.venus-bdlab.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
+
 lodash@^4.17.10:
   version "4.17.10"
   resolved "http://npm.venus-bdlab.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
@@ -555,6 +683,14 @@ lodash@^4.17.10:
 make-error@^1.1.1:
   version "1.3.4"
   resolved "http://npm.venus-bdlab.com/make-error/-/make-error-1.3.4.tgz#19978ed575f9e9545d2ff8c13e33b5d18a67d535"
+
+md5@^2.2.1:
+  version "2.2.1"
+  resolved "http://npm.venus-bdlab.com/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
+  dependencies:
+    charenc "~0.0.1"
+    crypt "~0.0.1"
+    is-buffer "~1.1.1"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -652,6 +788,10 @@ ms@2.0.0:
   version "2.0.0"
   resolved "http://npm.venus-bdlab.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
 
+ms@^2.0.0, ms@^2.1.1:
+  version "2.1.1"
+  resolved "http://npm.venus-bdlab.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
+
 negotiator@0.6.1:
   version "0.6.1"
   resolved "http://npm.venus-bdlab.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -723,6 +863,10 @@ resolve@^1.3.2:
   resolved "http://npm.venus-bdlab.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
+
+safe-buffer@^5.0.1:
+  version "5.1.2"
+  resolved "http://npm.venus-bdlab.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
 
 "safer-buffer@>= 2.1.2 < 3":
   version "2.1.2"
@@ -857,6 +1001,10 @@ vary@^1.0.0:
 wrappy@1:
   version "1.0.2"
   resolved "http://npm.venus-bdlab.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+
+xtend@^4.0.1:
+  version "4.0.1"
+  resolved "http://npm.venus-bdlab.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 yn@^2.0.0:
   version "2.0.0"

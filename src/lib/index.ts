@@ -18,6 +18,12 @@ export function last(arr: Array<Function>): Function | PropertyDescriptor {
   return arr[arr.length - 1];
 }
 
+/**
+ * URL必传参数校验
+ * @required({params: 'username'})
+ * @required({params: ['username','age']})
+ * @required({query: 'username'})
+ */
 export function requireDescriptor(target: any, name: string, descriptor: PropertyDescriptor, rules: any) {
   async function middleware(ctx: Koa.Context, next: any) {
     if (rules.query) {
